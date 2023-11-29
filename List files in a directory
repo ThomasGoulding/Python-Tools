@@ -1,0 +1,6 @@
+#directory, file name, file type
+dir /a /s /b > filelist.txt
+
+
+#filename without directoty 
+for /r %i in (*) do @echo %~ni >> filelist.txt 
